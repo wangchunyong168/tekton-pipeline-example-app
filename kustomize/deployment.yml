@@ -18,7 +18,7 @@ spec:
       containers:
       - name: 2048-app
         # Replace with your docker registry info
-        image: <your_docker_registry>/<repo_name>/<image_name>:<tag>
+        image: babywalkeracr.azurecr.io/docker-2048:1.0.0
         ports:
         - name: http
           containerPort: 8000
