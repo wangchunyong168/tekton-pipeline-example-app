@@ -18,11 +18,8 @@ spec:
       containers:
       - name: 2048-app
         # Replace with your docker registry info
-        image: "babywalkeracr.azurecr.io/tekton-demo/2048-app:$(DOCKER_TAG)"
+        image: "babywalkeracr.azurecr.io/tekton-demo/2048-app:1.0.1"
         imagePullPolicy: IfNotPresent
-        envFrom:
-          - configMapRef:
-              name: build-task-configmap
         ports:
         - name: http
           containerPort: 8000
