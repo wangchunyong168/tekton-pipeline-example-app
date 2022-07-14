@@ -18,7 +18,7 @@ spec:
       containers:
       - name: 2048-app
         # Replace with your docker registry info
-        image: babywalkeracr.azurecr.io/azureresourcemanagementbackend:$(Build.SourceVersion)
+        image: babywalkeracr.azurecr.io/tekton-demo/2048-app@sha256:bda302264a7f7f76694bfcc501eff127498608f27cc03ba6c1902651a19274af
         ports:
         - name: http
           containerPort: 8000
