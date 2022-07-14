@@ -22,7 +22,7 @@ spec:
         imagePullPolicy: IfNotPresent
         envFrom:
           - configMapRef:
-            name: build-task-configmap
+              name: build-task-configmap
         ports:
         - name: http
           containerPort: 8000
