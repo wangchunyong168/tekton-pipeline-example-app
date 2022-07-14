@@ -18,7 +18,7 @@ spec:
       containers:
       - name: 2048-app
         # Replace with your docker registry info
-        image: babywalkeracr.azurecr.io/tekton-demo/2048-app@sha256:bda302264a7f7f76694bfcc501eff127498608f27cc03ba6c1902651a19274af
+        image: babywalkeracr.azurecr.io/tekton-demo/2048-app@sha256:e0edb5b67dda11f6a6880a9e8b2cfd4e60c62c65a1db7bf783986ee81174c400
         ports:
         - name: http
           containerPort: 8000
